@@ -1,5 +1,22 @@
 {% extends "template_base.html" %}
 
+
 {% block content %}
-<h1>contenido fabricanteList</h1>
+<h1>contenido fabricantes</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <form action="" method="post">
+                <input type="text" name="nombre" class="form-control" placeholder="Nombre del fabricante">
+                <button type="submit" class="btn btn-success">Guardar</button>
+            </form>
+        </div>
+        <div class="col-6">
+            {% for fabricante in fabricantesFront %}
+                <li> {{fabricante.nombre}} </li>
+            {% endfor %}
+        </div>
+    </div>    
+</div>
 {% endblock %}

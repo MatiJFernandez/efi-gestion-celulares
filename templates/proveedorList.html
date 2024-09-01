@@ -1,5 +1,21 @@
 {% extends "template_base.html" %}
 
 {% block content %}
-<h1>contenido proveedorList</h1>
+<h1>contenido proveedores</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <form action="" method="post">
+                <input type="text" name="nombre" class="form-control" placeholder="Nombre del proveedor">
+                <button type="submit" class="btn btn-success">Guardar</button>
+            </form>
+        </div>
+        <div class="col-6">
+            {% for proveedor in proveedoresFront %}
+                <li> {{proveedor.nombre}} </li>
+            {% endfor %}
+        </div>
+    </div>
+</div>
 {% endblock %}

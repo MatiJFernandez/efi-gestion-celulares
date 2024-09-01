@@ -2,4 +2,21 @@
 
 {% block content %}
 <h1>contenido modeloList</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <form action="" method="post">
+                <input type="text" name="nombre" class="form-control" placeholder="Nombre del modelo">
+                <button type="submit" class="btn btn-success">Guardar</button>
+            </form>
+        </div>
+        <div class="col-6">
+            {% for modelo in modelosFront %}
+                <li> {{modelo.nombre}} </li>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
 {% endblock %}

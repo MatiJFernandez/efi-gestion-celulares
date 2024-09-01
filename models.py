@@ -2,7 +2,9 @@ from app import db
 
 class Equipo(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    costo = db.Column(db.Integer)  
+    costo = db.Column(db.Integer, nullable=False)
+    anioFabricacion = db.Column(db.Integer)  
+
 
 class Marca(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -38,3 +40,5 @@ class Accesorio(db.Model):
 
     def __str__(self) -> str:
         return self.nombre
+
+
