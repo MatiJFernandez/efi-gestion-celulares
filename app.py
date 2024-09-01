@@ -28,3 +28,28 @@ def index():
 def celulares():
 
     return render_template("celulares.html")
+
+@app.route("/marcaList")
+def marcas():
+
+    return render_template("marcaList.html")
+
+@app.route("/modeloList")
+def modelos():
+
+    return render_template("modeloList.html")
+
+@app.route("/fabricanteList")
+def fabricantes():
+
+    return render_template("fabricanteList.html")
+
+@app.route("/proveedorList")
+def proveedores():
+
+    return render_template("proveedorList.html")
+
+@app.route("/accesorioList")
+def accesorios():
+
+    return render_template("accesorioList.html")

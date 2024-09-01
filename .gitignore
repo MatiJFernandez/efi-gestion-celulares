@@ -1,5 +1,8 @@
 # Ignore the virtual environment directory
 entorno/
+entorno
+/entorno
+.entorno
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
